@@ -83,4 +83,4 @@ Display the help
 ##Custom
         
 ###Add Files
-If you need to add icons, splashscreen, others, edit the files compile.sh and simulate.sh and after the swf definition add the files you want.
+If you need to add icons, splashscreen, or directory, edit the files compile.sh and simulate.sh and add all just after the swf definition.
