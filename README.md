@@ -38,12 +38,18 @@ PWD=`pwd`
 ##Commands
           
 ###Compile
-Will generate an .ipa file to test on your device. 
+Will generate an .ipa file to test on your device in ip-ad-hoc mode (slower but faster on device). 
 try to change ipa-test-interpreter to ipa-ad-hoc to get a faster result on your mobile, but take more time to compile.
 ~~~
 ./swfunixbuilder.sh compile
 ~~~           
-
+                           
+###Fast Compile
+Will generate an .ipa file to test on your device in ipa-test-interpreter mode (faster but slower on device). 
+try to change ipa-test-interpreter to ipa-ad-hoc to get a faster result on your mobile, but take more time to compile.
+~~~
+./swfunixbuilder.sh fastcompile
+~~~
 ###Deploy (need to compile before)
 Will send your compiled .ipa to your device, just connect your iphone and type the command.
 ~~~                     
