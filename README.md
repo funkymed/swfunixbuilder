@@ -79,6 +79,12 @@ Display the help
 ~~~                     
 ./swfunixbuilder.sh help
 ~~~                                              
+        
+###Credit
+Display the credit
+~~~                     
+./swfunixbuilder.sh credit
+~~~        
 
 ##Custom
         
