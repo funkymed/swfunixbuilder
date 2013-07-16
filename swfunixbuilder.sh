@@ -1,11 +1,19 @@
 #!/bin/sh
 source config.sh
 command=$1
-     
-function_help () { 
-	echo "***************************************************************************"     
-	echo "*                                 HELP                                    *"     
-	echo "***************************************************************************"
+                                              
+_title()
+{      
+	if test $1
+	then
+		echo "***************************************************************************"     
+		echo "*\t\t\t"$*
+		echo "***************************************************************************"
+	fi                   
+}
+
+_help () { 
+	_title "help"
 	echo "COMMANDS :"    
 	echo "help\t\t\tthis text"
 	echo "compile\t\t\tGenerate .ipa file for device"
@@ -20,36 +28,32 @@ then
 
 	case "$command" in
 		  "compile")
-		echo "***************************************************************************"     
-		echo "*                        making device version                            *"     
-		echo "***************************************************************************"
+		TXT="making device version"
+		_title ${TXT}
 		echo "Please wait ... compiling..."
 		echo $PWD/$FILENAME_PROD
 		"$PATH_ADT" -package -target ipa-ad-hoc -provisioning-profile $PATH_PROVISION -keystore $PATH_KEY -storetype PKCS12 -storepass 			 $PASSWORD $FILENAME_PROD $FILENAME_MAIN-app.xml $FILENAME_MAIN.swf
 		echo "done."
 		;;        
 		"deploy")             
-		echo "***************************************************************************"    
-		echo "*                     Deploy test version on device                       *"    
-		echo "***************************************************************************"
+		TXT="Deploy test version on device"
+		_title ${TXT}
 		echo "Please wait ... sending ..."        
 		echo $PWD/$FILENAME_PROD          
 		"$PATH_TRANSPORT" -v $FILENAME_PROD
 		echo "done."  
 		;;     
 		"simulate")
-		echo "***************************************************************************"   
-		echo "*                    Compiling a simulation version                       *"   
-		echo "***************************************************************************"
+		TXT="Compiling a simulation version"
+		_title ${TXT}
 		echo "please wait .... compiling ..."   
 		echo $PWD/$FILENAME_TEST    
 		"$PATH_ADT" -package -target ipa-test-interpreter-simulator -provisioning-profile $PATH_PROVISION -keystore $PATH_KEY -storetype PKCS12 -storepass $PASSWORD $FILENAME_TEST $FILENAME_MAIN-app.xml $FILENAME_MAIN.swf -platformsdk $PATH_SDK
 		echo "done"
 		;;          
 		"launch")
-		echo "***************************************************************************"        
-		echo "*                       Install & load simulation                         *"        
-		echo "***************************************************************************"
+		TXT="Install & load simulation" 
+		_title ${TXT}
 		echo "please wait ... installing ..." 
 		echo $PWD/$FILENAME_TEST
 		"$PATH_ADT" -installApp -platform ios -platformsdk $PATH_SDK -device ios-simulator -package $FILENAME_TEST
@@ -58,15 +62,15 @@ then
 		echo "done."
 		;;
 		"run")
-		./simulate.sh
-		./launch.sh
+		./swfunixbuilder.sh simulate
+		./swfunixbuilder.sh launch
 		;;
 		"help")
-		function_help
+		_help
 		;;
 	esac
 
 
 else       
-	function_help                                                          
+	_help                                                          
 fi
