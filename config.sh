@@ -1,4 +1,4 @@
-PATH_ADT="/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/bin/"adt
+PATH_ADT="/Applications/Adobe Flash Builder 4.6/sdks/AIRSDK_Compiler/bin/"adt
 PATH_SDK=/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
 PATH_KEY=yourkeyfile.p12             
 PATH_PROVISION=yourprovision.mobileprovision

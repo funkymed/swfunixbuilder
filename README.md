@@ -12,6 +12,12 @@ I'm using the file transporter_chief.rb from https://github.com/igorsokolov/octo
 To use the commands, you don't need to open XCode but it have to be installed with the component "Command Line Tools".
 
 To do it, you have to start XCode and go in preferences > Downloads > Components and click "install" next to "Command Line Tools".
+                                                             
+You also have to install Adobe AIR 3.7 at least http://www.adobe.com/devnet/air/air-sdk-download.html‎
+
+Extract and copy the directory AIRSDK_Compiler in your "/Applications/Adobe Flash Builder 4.6/sdks/"
+
+Take a look to the file "Example-Main-app.xml" you must have something like this in yours.
 
 ###Configuration
 Copy all the files in your project directory in bin-debug or bin-release and edit the file config.sh, be sure all the path are correct.
