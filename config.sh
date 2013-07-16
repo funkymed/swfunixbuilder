@@ -8,3 +8,4 @@ FILENAME_TEST=Test.ipa
 FILENAME_PROD=Prod.ipa
 PASSWORD=yourpassword              
 PWD=`pwd`
+ID="your_id_app"         

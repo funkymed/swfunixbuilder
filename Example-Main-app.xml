@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/3.1">
+	<id>your_id_app</id>                                
+	<filename>Main</filename>                              
+	<name>Xml App Example</name>               
+	<versionNumber>0.0.0</versionNumber>  
+	<description>Tigreboite</description>
+	<copyright>Tigreboite</copyright>
+	<initialWindow>
+		<content>Main.swf</content>
+		<x>0</x>
+		<y>0</y>
+        <aspectRatio>landscape</aspectRatio>
+        <renderMode>direct</renderMode>
+		<autoOrients>false</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+    </initialWindow>   
+	<android>
+        <manifestAdditions><![CDATA[
+		<manifest android:installLocation="auto">
+		    <uses-permission android:name="android.permission.INTERNET"/>
+		    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+		    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+		</manifest>			
+	]]></manifestAdditions>
+    </android> 
+	<iPhone>
+        <InfoAdditions><![CDATA[
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+			</array>
+		]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>            
+</application>
