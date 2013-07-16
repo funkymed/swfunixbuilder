@@ -1,0 +1,10 @@
+PATH_ADT="/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/bin/"adt
+PATH_SDK=/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+PATH_KEY=yourkeyfile.p12             
+PATH_PROVISION=yourprovision.mobileprovision
+PATH_TRANSPORT=transporter_chief.rb
+FILENAME_MAIN=Main
+FILENAME_TEST=Test.ipa
+FILENAME_PROD=Prod.ipa
+PASSWORD=yourpassword              
+PWD=`pwd`
