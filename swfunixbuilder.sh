@@ -17,7 +17,7 @@ _help () {
 	_title ${TXT}  
 	echo "COMMANDS :"    
 	echo "help\t\t\tHelp"
-	echo "credits\t\t\tCredits"  
+	echo "credit\t\t\tCredit"  
 	echo "compile\t\t\tGenerate .ipa file for device with optimised code (slower)"
 	echo "fastcompile\t\tGenerate .ipa for device without optimised code"
 	echo "deploy\t\t\tInstall the .ipa file to the device connected in USB"
@@ -85,7 +85,7 @@ then
 		_help
 		exit 1;     
 		;;          
-		"credits")
+		"credit")
 		echo "Swf unix builder (2013-07)"
 		echo "Shell code by Cyril Pereira, Ruby by Igor Sokolov"
 		exit 1;     
