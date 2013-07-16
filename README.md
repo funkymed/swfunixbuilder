@@ -32,7 +32,8 @@ FILENAME_MAIN=Main
 FILENAME_TEST=Test.ipa
 FILENAME_PROD=Prod.ipa
 PASSWORD=yourpassword              
-PWD=`pwd`
+PWD=`pwd` 
+ID="your_id_app"
 ~~~
 
 ##Commands
