@@ -1,13 +1,11 @@
 #SWF UNIX BUILDER
-===========
 Simple commands can help to test en build your application from flash builder
 
 GitHub : https://github.com/funkymed/swfunixbuilder                 
 
 I'm using the file transporter_chief.rb from https://github.com/igorsokolov/octoios to send application to device all credits goes to Igor Sokolov.
 
-##Installation
-
+##Installation & Configuration
 Copy all the files in your project directory in bin-debug or bin-release and edit the file config.sh, be sure all the path are correct.
 
 ~~~
