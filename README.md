@@ -20,6 +20,8 @@ FILENAME_PROD=Prod.ipa
 PASSWORD=yourpassword              
 PWD=`pwd`
 ~~~
+
+##Commands
           
 ###Compile
 Will generate an .ipa file to test on your device. It will interpret your as3 code in objective-c. It can take a while to compile.
