@@ -38,7 +38,8 @@ PWD=`pwd`
 ##Commands
           
 ###Compile
-Will generate an .ipa file to test on your device. It will interpret your as3 code in objective-c. It can take a while to compile.
+Will generate an .ipa file to test on your device. 
+try to change ipa-test-interpreter to ipa-ad-hoc to get a faster result on your mobile, but take more time to compile.
 ~~~
 ./compile.sh 
 ~~~           
