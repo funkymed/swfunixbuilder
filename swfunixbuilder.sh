@@ -46,7 +46,7 @@ then
 			echo $PWD/$FILENAME_PROD
 			"$PATH_ADT" -package -target ipa-test-interpreter -provisioning-profile $PATH_PROVISION -keystore $PATH_KEY -storetype PKCS12 -storepass $PASSWORD $FILENAME_PROD $FILENAME_MAIN-app.xml $FILENAME_MAIN.swf
 			echo "done."    
-		exit 1; 
+			exit 1; 
 		;;        
 		"deploy")             
 			TXT="Deploy test version on device"
@@ -80,6 +80,7 @@ then
 		"run")
 			./swfunixbuilder.sh simulate
 			./swfunixbuilder.sh launch
+			exit 1;                             
 		;;
 		"help")
 			_help
