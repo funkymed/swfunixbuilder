@@ -4,8 +4,8 @@
 	<filename>Main</filename>                              
 	<name>Xml App Example</name>               
 	<versionNumber>0.0.0</versionNumber>  
-	<description>Tigreboite</description>
-	<copyright>Tigreboite</copyright>
+	<description>example</description>
+	<copyright>example</copyright>
 	<initialWindow>
 		<content>Main.swf</content>
 		<x>0</x>
