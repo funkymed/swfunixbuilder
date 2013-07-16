@@ -3,9 +3,14 @@ Simple commands can help to test en build your application from flash builder
 
 GitHub : https://github.com/funkymed/swfunixbuilder                 
 
-I'm using the file transporter_chief.rb from https://github.com/igorsokolov/octoios to send application to device all credits goes to Igor Sokolov.
+I'm using the file transporter_chief.rb from https://github.com/igorsokolov/octoios to send application to device all credits goes to Igor Sokolov.        
 
-##Installation & Configuration
+##Installation & Configuration       
+
+To use the commands, you don't need to open XCode but it have to be installed with the component "Command Line Tools".
+
+To do it, you have to start XCode and go in preferences > Downloads > Components and click "install" next to "Command Line Tools".
+
 Copy all the files in your project directory in bin-debug or bin-release and edit the file config.sh, be sure all the path are correct.
 
 ~~~
