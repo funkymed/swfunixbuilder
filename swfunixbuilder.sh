@@ -69,8 +69,9 @@ then
 		_help
 		;;
 	esac
-
+	exit 1;
 
 else       
 	_help                                                          
+	exit 1;
 fi
